@@ -1,0 +1,25 @@
+.about_section{
+    margin-top: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.eco-re{
+    margin:10px 40px;
+}
+.about_section img{
+    margin: 10px 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.eco-re p{
+    font-size: 20px;
+}
+@media(max-width:500px){
+ .about_section{
+     margin-top: 120px;
+     margin-bottom: 30px;
+ }
+}

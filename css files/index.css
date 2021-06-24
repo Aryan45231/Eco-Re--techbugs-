@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://th.bing.com/th/id/OIP.1623cf5iuybN9qidG59yhgHaEo?w=303&h=189&c=7&o=5&dpr=1.56&pid=1.7");
+    background-size:cover;
+}
+/* Nav Bar*/
+.nav{
+    background-color: rgb(36, 35, 35,.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.brand img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.nav a{
+    text-decoration: none;
+    color:rgb(157, 212, 6);
+    margin-right: 20px;
+    font-size: 20px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand a{
+    color: white;
+    text-decoration: none;
+    font-family:sans-serif;
+}
+.menu a:hover{
+    color: white
+}
+@media(max-width:380px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(min-width:600px){
+    body{
+       height: 100vh;
+    }
+}
+/* card */
+.card_container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgb(240, 227, 227,.9);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.card_container a{
+    color: black;
+    text-decoration: none;
+}
+
+.card:hover{
+        background-color:rgb(36, 35, 35,.5);
+        margin-bottom: 20px;
+        box-shadow:10px 10px 10px black;
+}
+a .card:hover{
+    color: whitesmoke;
+}
+/* discription and  sign-in */
+.dis{
+    margin: 10px 10px;
+    align-content: center;
+    display: flex   ;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white    ;
+}
+
+.sign-in{
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+}
+.sign-in button{
+   width: 260px;
+   height: 80px;
+   font-size: 30px;
+   background-color: rgb(106, 179, 12);
+   border-radius: 15px;
+   border:1px solid;
+   margin-bottom: 10px;
+}
+.sign-in button:hover{
+   background-color: whitesmoke;
+   color: rgb(106, 179, 12);
+}

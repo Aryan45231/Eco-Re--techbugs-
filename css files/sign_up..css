@@ -1,0 +1,41 @@
+.form_container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    box-shadow: 5px 5px rgb(0,0,0,.6);
+    padding: 20px ;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+form input{ 
+    width: 250px;
+    margin-left:c;
+}
+form h3{
+    text-align: left;
+}
+form button{
+    align-self: center;
+    width: 250px;
+    margin-top: 30px;
+    background-color: rgb(157, 212, 6);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.trans{
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+}
+@media(max-width:600px){
+    form{
+        width: 280px;
+    }
+}

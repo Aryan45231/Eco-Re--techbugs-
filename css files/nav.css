@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+.nav{
+    z-index: 1;
+    background-color: rgb(157, 212, 6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   box-shadow: 0 5px 10px rgb(0,0,0,.6);
+   position: fixed;
+   top:0;
+   width: 100%;
+}
+.rightnavpart{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+/* hamburger */
+.icon{
+    width: 35px;
+    cursor: pointer;
+    margin: 25px 0  0 20px;
+}
+.bar{
+    background-color: white;
+    width: 35px;
+    height: 6px;
+    transition: .3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.hamicon #bar1{
+    transform: translateY(4px)rotate(-45deg);
+}
+.hamicon #bar3{
+    transform: translateY(-6px)rotate(45deg);
+}
+.hamicon #bar2{
+    display: none;
+}
+.ham_items{
+    border-radius: 30px;
+    background-color: white;
+    z-index: 2;
+    width: 260px;
+    border: 1px solid black;
+    top:0;
+    left: 0;
+    position: fixed;
+    display: none;
+    transition: 0.5s ease-in;
+}
+/* hamprofile */
+.profile{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 20px;
+}
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+/* hamlist */
+.hamlist a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+.hamlist div{
+    height: 45px;
+    border-bottom: 1px solid black;
+}
+.hamlist div:hover{
+    background-color: rgb(157, 212, 6);
+}
+.show_items{
+    display: block;
+    transform: translate(27px ,40px);
+     box-shadow: 5px 5px  10px rgb(0,0,0,.5);
+}
+/* brand */
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 5px 20px;
+}
+.brand a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/* left-nav-part */
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    color:black
+}
+@media(max-width:480px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightnavpart{
+        margin-right: 100px;
+    }
+    .brand{
+        flex-direction: column;
+       transform: translateX(47px);
+    }
+    .brand img{
+        margin-top: 10px;
+    }
+    .icon{
+       position: absolute;
+       transform: translateX(-100px);
+    }
+}
